@@ -1,0 +1,130 @@
+#messageContainer{
+	display:none;
+}
+
+#outer-dropzone {
+  height: 140px;
+
+  touch-action: none;
+}
+
+#inner-dropzone {
+  height: 80px;
+}
+
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  position:absolute;
+  z-index:999;
+  min-width: 40px;
+  padding: 0em 0.5em;
+  padding-left:0;
+  color: #fff;
+  background-color: #29e;
+  border: none;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+  line-height: 10px;
+  padding-right: 0 !important;
+  padding-left: 5px !important;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+  opacity:0.9;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=90);
+
+  /* Netscape */
+  -moz-opacity: 0.9;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.9;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.circle {
+	width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #323c3c;
+    float: left;
+	display: inline-block;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+
+.dropped-out{
+	display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    width:200px;
+    color: black;
+}
+
+.col-fixed-240{
+    width:240px;
+    height:100%;
+    z-index:1;
+}
+
+.col-fixed-605{
+    margin-left:240px;
+    width:605px;
+    height:100%;
+    z-index:1;
+}
+
+.page-item{
+	cursor:pointer;
+}
+
+.pager{
+	margin-bottom:30px !important;
+	margin-top:0px !important;
+	margin-bottom: -31px !important;
+}
+
+.drag-drop.dropped-out .descrizione {
+    font-size: 12px !important;
+}
+
+#the-canvas{
+  height:842px;
+  width: 595px;
+}
